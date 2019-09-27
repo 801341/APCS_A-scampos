@@ -13,11 +13,24 @@ public class ScannerRunner
     /**
      * Constructor for objects of class ScannerRunner
      */
-    public ScannerRunner()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+    public ScannerRunner(){
+        inputStr = name;
+     {
+           if (inputStr.indexOf(",  ") == -1){
+            for (int i = 0; i <=inputStr.length(); i++){
+                if (inputStr.substring(i) == " "){ 
+                    count++;
+                }
+    
+            }
+            System.out.print(count);
+            //if (count == 2){
+                //Format Three == 
+                
+            //}
+            
+        }
+      }
 
     /**
      * An example of a method - replace this comment with your own
@@ -25,9 +38,6 @@ public class ScannerRunner
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    
+   }
 }
