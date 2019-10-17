@@ -1,0 +1,44 @@
+
+/**
+ * We find the mean, median and mode.
+ *
+ * @author (Stephanie)
+ * @version (10/16/19)
+ */
+import java.util.*;
+public class MMM
+{
+    public int sampleMethod()
+    {
+    ArrayList<Integer> arraylist;
+    arraylist = new ArrayList<Integer>();
+    //mean
+    int sum = 0;
+    for (int i = 0; i<arraylist.size(); i++){
+               sum = sum + arraylist.get(i);
+      }
+    int mean = sum/arraylist.size();
+       //median
+    int middle = arraylist.size()/2;
+     if (arraylist.size()%2 == 1){
+         System.out.print(arraylist.get(middle));
+        }
+     else{
+        System.out.print((arraylist.get(middle-1) + arraylist.get(middle)) /2);
+        }
+       //mode
+       int maxcount = 0;
+       int count = 1;
+     for (int value = 0; value<arraylist.size(); value++){
+      for (int x = 0; x<arraylist.size(); x++){
+       if (value == x){
+         count = count + 1;
+         if (maxcount <= count){
+           maxcount = count;
+         }
+       } 
+     }
+    }
+    return maxcount & mean;
+  }
+}
