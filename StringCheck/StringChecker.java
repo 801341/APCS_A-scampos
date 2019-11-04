@@ -1,27 +1,40 @@
-import java.until.*;
+import java.util.*;
 public class StringChecker
 {
-    String input = "";
-    
-    public static void main(){
-        System.out.print("Enter words to add to your list of words. Type 'quit' to leave");
+    private String[] wordArray = {"cat", "cattipillar", "catcher", "dog"};
+
+    public StringChecker(){
+        Scanner sc = new Scanner(System.in);
+        String inputStr = "";
+        ArrayList<String> keyList = wordChecker(wordArray, "cat");
     }
-    public ArrayList<Sting> wordChecker(String[] str, String key){
-        ArrayList<Sting> words = new ArrayList<Sting>();
+    public static void printList(ArrayList<String> str){
+        for (int i = 0; i < str.size(); i++){
+        System.out.print(str.get[i]indexOf);
+    }
+    }
+    public ArrayList<String> wordChecker(String[] str, String key){
+        
+        ArrayList<String> temp = new ArrayList<String>();
         for (int i = 0; i < str.length; i++){
             if (str[i].indexOf(key) >= 0){
-                words.add(str[i]);
+                temp.add(str[i]);
+            }
+        }
+        return temp;
+    }
+    
+    public String[] wordChecker(ArrayList<String> str, String key){
+        String[] words = new String[] {};
+        for (int i = 0; i < str.size(); i++){
+          if (str.get(i).indexOf(key) >= 0){
+             words[i] = (str.get(i));
             }
         }
         return words;
     }
-    public String[] wordChecker(ArrayList<Sting> str, String Key){
-        String[] words = new String[] {};
-        for (int i = 0; i < str.size(); i++){
-          if (str.get[i].indexOf(key) >= 0){
-             words.get(str[i]);
-            }
-        }
-        return words;
+    
+    public static void main(){
+        
     }
 }
