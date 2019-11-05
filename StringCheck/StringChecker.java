@@ -10,8 +10,13 @@ public class StringChecker
     }
     public static void printList(ArrayList<String> str){
         for (int i = 0; i < str.size(); i++){
-        System.out.print(str.get[i]indexOf);
+            System.out.println(str.get(i));
+        }
     }
+    public static void printList(String[] str){
+        for (int i = 0; i < str.length; i++){
+            System.out.println(str[i]);
+        }
     }
     public ArrayList<String> wordChecker(String[] str, String key){
         
@@ -33,8 +38,7 @@ public class StringChecker
         }
         return words;
     }
-    
     public static void main(){
-        
+      printList()  
     }
 }
