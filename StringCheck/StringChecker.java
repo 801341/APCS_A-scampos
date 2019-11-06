@@ -18,8 +18,7 @@ public class StringChecker
             System.out.println(str[i]);
         }
     }
-    public ArrayList<String> wordChecker(String[] str, String key){
-        
+    public ArrayList<String> wordChecker(String[] str, String key){        
         ArrayList<String> temp = new ArrayList<String>();
         for (int i = 0; i < str.length; i++){
             if (str[i].indexOf(key) >= 0){
@@ -28,7 +27,6 @@ public class StringChecker
         }
         return temp;
     }
-    
     public String[] wordChecker(ArrayList<String> str, String key){
         String[] words = new String[] {};
         for (int i = 0; i < str.size(); i++){
@@ -38,7 +36,7 @@ public class StringChecker
         }
         return words;
     }
-    public static void main(){
-      printList()  
-    }
+      public static void main(){
+      printList(keyList); 
+    } 
 }
