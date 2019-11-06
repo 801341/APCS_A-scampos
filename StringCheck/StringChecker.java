@@ -27,7 +27,11 @@ public class StringChecker
             System.out.println(str[i]);
         }
     }
+<<<<<<< HEAD
     public ArrayList<String> wordChecker(String[] str, String key){
+=======
+    public ArrayList<String> wordChecker(String[] str, String key){        
+>>>>>>> 18e74e94ec1cf22850ad470df9636f0ac06b992b
         ArrayList<String> temp = new ArrayList<String>();
         for (int i = 0; i < str.length; i++){
             if (str[i].indexOf(key) >= 0){
@@ -36,7 +40,6 @@ public class StringChecker
         }
         return temp;
     }
-    
     public String[] wordChecker(ArrayList<String> str, String key){
         String[] words = new String[] {};
         for (int i = 0; i < str.size(); i++){
@@ -46,8 +49,14 @@ public class StringChecker
         }
         return words;
     }
+<<<<<<< HEAD
     public static void main(){
        StringChecker sc = new StringChecker();
     }
+=======
+      public static void main(){
+      printList(keyList); 
+    } 
+>>>>>>> 18e74e94ec1cf22850ad470df9636f0ac06b992b
 }
 
