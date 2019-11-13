@@ -14,8 +14,8 @@ public class StudList
     private String lName;
     private int stuNumber;
     private double gpa;
-    public StudList()
-    {
+    public StudList(){
+     
       
     }
     public void add(Students){
