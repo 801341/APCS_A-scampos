@@ -8,7 +8,7 @@
 import java.util.*;
 public class StudList
 {
-    ArrayList<Student> StudentList;
+    ArrayList<Students> StudentList;
     private String fName;
     private String mName;
     private String lName;
@@ -18,8 +18,8 @@ public class StudList
      
       
     }
-    public void add(Students){
-        
+    public void add(Student){
+        Students.add(student);
     
     }
     public void deleteStudent(String LastName)
