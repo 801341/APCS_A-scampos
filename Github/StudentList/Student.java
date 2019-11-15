@@ -19,15 +19,18 @@ public class Student
         x = 0;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public static void parseUserInput(string input, student<Student> student){
+        for (int i = 0;i < StudentList.length(); i++){
+    
+        if(i.indexof(' ') != i.lastindexof(' ')){
+             fname = i.substring(i.indexof(' '));
+             mname = i.substring(i.indexof(' '),(i.lastindexof(' ')));
+             lname = i.substring(i.lastindexof(' '), (i.length + 1));
+           }
+        else if (i.indexof(',') != -1){
+            lname = i.substring(',');
+            fname = i.substring(i.indexof(' '), i.lastindexof(' '));
+            mname = i.substring(i.lastindexof(' '), (i.length + 1));
+        }
     }
 }
