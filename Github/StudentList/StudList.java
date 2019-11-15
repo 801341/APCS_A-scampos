@@ -15,7 +15,16 @@ public class StudList
     private int stuNumber;
     private double gpa;
     public StudList(){
-     
+   for (i = 0; i < studentList.size; i++){
+       if (i.indexof(,) != -1){
+           if(i.indexof(,) != i.lastindexof(,)){
+               fname = i.substring(i.indexof(,));
+               mname = i.substring(i.indexof(,),(i.lastindexof(,));
+               lname = i.substring(i.lastindexof(,));
+           }
+       }
+   
+   }
       
     }
     public void add(Student){
