@@ -1,0 +1,68 @@
+
+/**
+ * Write a description of class Lab1119 here.
+ *
+ * @author (Stephanie)
+ * @version (11/20/19)
+ */
+public class Lab1119
+{
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public void loadArray(int y)
+     {
+       int[][] array = new int[10][10];
+        for( int i = 0;i < array.length; i++){
+            for(int c = 0; c < array[i].length; i++){
+                array[i][c] = (int) Math.random() * 10 + 1;
+            }
+    }
+    System.out.println(array);
+   }
+   public void findMedian(int y)
+     {
+       int[][] array = new int[10][10];
+        for( int i = 0;i < array.length; i++){
+            for(int c = 0; c < array[i].length; i++){
+                
+            }
+    }
+    System.out.println(array);
+   }
+   public void findMean(int y)
+     {
+       int[][] array = new int[10][10];
+        for( int i = 0;i < array.length; i++){
+            for(int c = 0; c < array[i].length; i++){
+                
+            }
+    }
+    System.out.println(array);
+   }
+   public void findMode(int y)
+     {
+       int[][] array = new int[10][10];
+        for( int i = 0;i < array.length; i++){
+            for(int c = 0; c < array[i].length; i++){
+                
+            }
+    }
+    System.out.println(array);
+   }
+   public void findMean2(int y)
+     {
+    int[][] array = new int[10][10];
+    int count = array[0][0];
+        for( int i = 0;i < array.length; i++){
+            for(int c = 0; c < array[i].length; i++){
+                count = count + array[i][c];
+            }
+    }
+    int mean = count / array.length;
+    System.out.println(array);
+   }
+}
