@@ -1,18 +1,14 @@
-
 /**
  * Write a description of class Student here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Stephanie)
+ * @version (11/24/19)
  */
 public class Student
 {
-
     private String fName;
     private String mName;
     private String lName;
-
-    
     public Student(String fullName){
 
         parseUserInput(fullName);
@@ -20,27 +16,20 @@ public class Student
     }
     
     public void parseUserInput(String input){
-        
-
-            // if(i.indexof(' ') != i.lastindexof(' ')){
-                // fname = i.substring(i.indexof(' '));
-                // mname = i.substring(i.indexof(' '),(i.lastindexof(' ')));
-                // lname = i.substring(i.lastindexof(' '), (i.length + 1));
-            // }
-            // else if (i.indexof(',') != -1){
-                // lname = i.substring(',');
-                // fname = i.substring(i.indexof(' '), i.lastindexof(' '));
-                // mname = i.substring(i.lastindexof(' '), (i.length + 1));
-            // }
-        
+             //"Last, First Middle
+             if(input.indexOf(' ') != input.lastIndexOf(' ')){
+                fName = input.substring((input.indexOf(' ') + 1), (input.lastIndexOf(' ')));
+                mName = input.substring(input.lastIndexOf(' '), input.indexOf(input.length() + 1));
+                lName = input.substring((0), (input.indexOf(',')));
+            }
     }
     
-    public String getFirstName(){//  getter for first anme
+    public String getFirstName(){//  getter for first name
         return fName;
     }
-    public String getLastname(){
-        return lname;
-    }
+     public String getLastname(){
+         return lName;
+     }
     public void setFirstName(String fn){//  getter for first anme
         fName = fn;
     }
