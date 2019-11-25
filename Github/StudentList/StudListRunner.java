@@ -1,54 +1,37 @@
-
 /**
- * Write a description of class StudList here.
+ * Write a description of class StudListRunner here.
  *
  * @author (Stephanie)
- * @version (11/24/19)
+ * @version (11/8/2019)
  */
+
 import java.util.*;
-public class StudList
+public class StudListRunner
 {
-    ArrayList<Student> studentList;
-   
-    private int stuNumber;
-    private double gpa;
-    public StudList(){
-        studentList = new ArrayList<Student>();
+    private StudList Stud = new StudList();
+
+       public StudListRunner(){
+        menuNumber();
     }
 
-    public void addStudent(Student s){
-        studentList.add(s);
+    //  Allow the user to choose a menu number
+    public void menuNumber(){
+        Scanner kb = new Scanner(System.in);
+        String userIn = "";
 
-    }
+        while(!userIn.equals("quit")){
+            System.out.println("Please choose a menu item\n");
+            System.out.println("1. Add Student");
+            System.out.println("2. Delete Student");
+            System.out.println("3. Print Student records");
+            System.out.println("4. Search for student");
+            System.out.println("5. Delete Student");
 
-    public void deleteStudent(String LastName)
-    {
-      for (int i = 0; i < studentList.size(); i++){
-          if (studentList.remove(studentList.get(i))){
-              studentList.remove(LastName);
-            }
         }
+
     }
 
-    public void deleteStudent(int stuNumber)
-    {
-        for (int i = 0; i < studentList.size(); i++){
-          if (studentList.remove(studentList.get(i))){
-              studentList.remove(stuNumber);
-            }
-        }
-    }
-
-    public void clearList()
-    {
-        for (int i = 0; i < studentList.size(); i++){
-          studentList.set(i, null);
-        }
-    }
-    public void printList()
-    {
-        for (int i = 0; i < studentList.size(); i++){
-          System.out.print(studentList.get(i) + " ");
-        }
+    public static void main(){
+        StudListRunner slr = new StudListRunner();
     }
 }
