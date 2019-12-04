@@ -10,6 +10,12 @@ public class IntArrayWorkerTester
     worker.print();
   }
   
+  public static void testLoadEvensOdds()
+  {
+    IntArrayWorker worker = new IntArrayWorker();
+    int[][] nums = new int[4][4];
+    worker.loadEvensOdds(nums);
+  }
   /** Method to test fillPattern1 */
   public static void testFillPattern1()
   {
@@ -93,11 +99,13 @@ public class IntArrayWorkerTester
   
   public static void main(String[] args)
   {
-    testSetMatrix();
-    testFillPattern1();
+    //testSetMatrix();
+    //testFillPattern1();
     //testGetCount(); 
-    testGetTotal();
-    testGetTotalNested();
+    //testGetTotal();
+    //testGetTotalNested();
+    testLoadEvensOdds();
+  
     //testGetLargest();
     //testGetColTotal();
   }
