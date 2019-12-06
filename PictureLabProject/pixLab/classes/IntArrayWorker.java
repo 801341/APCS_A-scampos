@@ -57,7 +57,7 @@ public class IntArrayWorker
         }
     }
     
-    public void loadEvensOdds(int[][] matrix)
+    public void flipVertical(int[][] matrix)
     {
         for (int row = 0; row < matrix.length; row++)
         {
