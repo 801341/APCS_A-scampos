@@ -9,6 +9,7 @@ public class Student
     private String fName;
     private String mName;
     private String lName;
+    private int num;
     public Student(String fullName){
 
         parseUserInput(fullName);
@@ -33,5 +34,13 @@ public class Student
     public void setFirstName(String fn){//  getter for first anme
         fName = fn;
     }
-
+    
+    
+    public int getstudentNum(){//  getter for first name
+        return num;
+    }
+    
+    public void setstudentNum(int num){//  getter for first name
+        int n = num;
+    }
 }

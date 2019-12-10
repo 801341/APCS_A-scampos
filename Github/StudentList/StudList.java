@@ -31,16 +31,25 @@ public class StudList
 
     public void deleteStudent(int stuNumber)
     {
-
+       
+       for (int i = 0; i < studentList.size(); i++){
+          if (studentList[i].get){
+              studentList.remove(studentList.get(i));
+            }
+        } 
     }
 
     public void clearList()
     {
-
+     for (int i = 0; i < studentList.size(); i++){
+         studentList.set(studentList.get(i)) = null;
+        } 
     }
 
     public void printList()
     {
-
+        for (int i = 0; i < studentList.size(); i++){
+            System.out.print(studentList.get(i));
+        }
     }
 }
