@@ -1,3 +1,5 @@
+package classes;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
@@ -57,7 +59,7 @@ public class SimplePicture implements DigitalPicture
   * of code in a constructor.
   */
  public SimplePicture() 
- {this(200,100);}
+    {this(200,100);}
  
  /**
   * A Constructor that takes a file name and uses the file to create
